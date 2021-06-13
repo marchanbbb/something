@@ -1,0 +1,335 @@
+root@f5807f543e3b:/data# redis-benchmark -n 1 -d 10 -t get
+====== GET ======
+  1 requests completed in 0.00 seconds
+  50 parallel clients
+  10 bytes payload
+  keep alive: 1
+  host configuration "save": 3600 1 300 100 60 10000
+  host configuration "appendonly": no
+  multi-thread: no
+
+Latency by percentile distribution:
+0.000% <= 0.655 milliseconds (cumulative count 1)
+100.000% <= 0.655 milliseconds (cumulative count 1)
+
+Cumulative distribution of latencies:
+0.000% <= 0.103 milliseconds (cumulative count 0)
+100.000% <= 0.703 milliseconds (cumulative count 1)
+
+Summary:
+  throughput summary: 1000.00 requests per second
+  latency summary (msec):
+          avg       min       p50       p95       p99       max
+        0.652     0.648     0.655     0.655     0.655     0.655
+
+root@f5807f543e3b:/data# redis-benchmark -n 1 -d 10 -t set
+====== SET ======
+  1 requests completed in 0.00 seconds
+  50 parallel clients
+  10 bytes payload
+  keep alive: 1
+  host configuration "save": 3600 1 300 100 60 10000
+  host configuration "appendonly": no
+  multi-thread: no
+
+Latency by percentile distribution:
+0.000% <= 0.535 milliseconds (cumulative count 1)
+100.000% <= 0.535 milliseconds (cumulative count 1)
+
+Cumulative distribution of latencies:
+0.000% <= 0.103 milliseconds (cumulative count 0)
+100.000% <= 0.607 milliseconds (cumulative count 1)
+
+Summary:
+  throughput summary: 1000.00 requests per second
+  latency summary (msec):
+          avg       min       p50       p95       p99       max
+        0.532     0.528     0.535     0.535     0.535     0.535
+
+root@f5807f543e3b:/data# redis-benchmark -n 1 -d 20 -t get
+====== GET ======
+  1 requests completed in 0.00 seconds
+  50 parallel clients
+  20 bytes payload
+  keep alive: 1
+  host configuration "save": 3600 1 300 100 60 10000
+  host configuration "appendonly": no
+  multi-thread: no
+
+Latency by percentile distribution:
+0.000% <= 0.535 milliseconds (cumulative count 1)
+100.000% <= 0.535 milliseconds (cumulative count 1)
+
+Cumulative distribution of latencies:
+0.000% <= 0.103 milliseconds (cumulative count 0)
+100.000% <= 0.607 milliseconds (cumulative count 1)
+
+Summary:
+  throughput summary: inf requests per second
+  latency summary (msec):
+          avg       min       p50       p95       p99       max
+        0.532     0.528     0.535     0.535     0.535     0.535
+
+root@f5807f543e3b:/data# redis-benchmark -n 1 -d 20 -t set
+====== SET ======
+  1 requests completed in 0.00 seconds
+  50 parallel clients
+  20 bytes payload
+  keep alive: 1
+  host configuration "save": 3600 1 300 100 60 10000
+  host configuration "appendonly": no
+  multi-thread: no
+
+Latency by percentile distribution:
+0.000% <= 0.671 milliseconds (cumulative count 1)
+100.000% <= 0.671 milliseconds (cumulative count 1)
+
+Cumulative distribution of latencies:
+0.000% <= 0.103 milliseconds (cumulative count 0)
+100.000% <= 0.703 milliseconds (cumulative count 1)
+
+Summary:
+  throughput summary: inf requests per second
+  latency summary (msec):
+          avg       min       p50       p95       p99       max
+        0.668     0.664     0.671     0.671     0.671     0.671
+
+root@f5807f543e3b:/data# redis-benchmark -n 1 -d 50 -t get
+====== GET ======
+  1 requests completed in 0.00 seconds
+  50 parallel clients
+  50 bytes payload
+  keep alive: 1
+  host configuration "save": 3600 1 300 100 60 10000
+  host configuration "appendonly": no
+  multi-thread: no
+
+Latency by percentile distribution:
+0.000% <= 0.679 milliseconds (cumulative count 1)
+100.000% <= 0.679 milliseconds (cumulative count 1)
+
+Cumulative distribution of latencies:
+0.000% <= 0.103 milliseconds (cumulative count 0)
+100.000% <= 0.703 milliseconds (cumulative count 1)
+
+Summary:
+  throughput summary: inf requests per second
+  latency summary (msec):
+          avg       min       p50       p95       p99       max
+        0.676     0.672     0.679     0.679     0.679     0.679
+
+root@f5807f543e3b:/data# redis-benchmark -n 1 -d 50 -t set
+====== SET ======
+  1 requests completed in 0.00 seconds
+  50 parallel clients
+  50 bytes payload
+  keep alive: 1
+  host configuration "save": 3600 1 300 100 60 10000
+  host configuration "appendonly": no
+  multi-thread: no
+
+Latency by percentile distribution:
+0.000% <= 0.695 milliseconds (cumulative count 1)
+100.000% <= 0.695 milliseconds (cumulative count 1)
+
+Cumulative distribution of latencies:
+0.000% <= 0.103 milliseconds (cumulative count 0)
+100.000% <= 0.703 milliseconds (cumulative count 1)
+
+Summary:
+  throughput summary: 1000.00 requests per second
+  latency summary (msec):
+          avg       min       p50       p95       p99       max
+        0.692     0.688     0.695     0.695     0.695     0.695
+
+root@f5807f543e3b:/data# redis-benchmark -n 1 -d 100 -t get
+====== GET ======
+  1 requests completed in 0.00 seconds
+  50 parallel clients
+  100 bytes payload
+  keep alive: 1
+  host configuration "save": 3600 1 300 100 60 10000
+  host configuration "appendonly": no
+  multi-thread: no
+
+Latency by percentile distribution:
+0.000% <= 0.519 milliseconds (cumulative count 1)
+100.000% <= 0.519 milliseconds (cumulative count 1)
+
+Cumulative distribution of latencies:
+0.000% <= 0.103 milliseconds (cumulative count 0)
+100.000% <= 0.607 milliseconds (cumulative count 1)
+
+Summary:
+  throughput summary: inf requests per second
+  latency summary (msec):
+          avg       min       p50       p95       p99       max
+        0.516     0.512     0.519     0.519     0.519     0.519
+
+root@f5807f543e3b:/data# redis-benchmark -n 1 -d 100 -t set
+====== SET ======
+  1 requests completed in 0.00 seconds
+  50 parallel clients
+  100 bytes payload
+  keep alive: 1
+  host configuration "save": 3600 1 300 100 60 10000
+  host configuration "appendonly": no
+  multi-thread: no
+
+Latency by percentile distribution:
+0.000% <= 0.519 milliseconds (cumulative count 1)
+100.000% <= 0.519 milliseconds (cumulative count 1)
+
+Cumulative distribution of latencies:
+0.000% <= 0.103 milliseconds (cumulative count 0)
+100.000% <= 0.607 milliseconds (cumulative count 1)
+
+Summary:
+  throughput summary: 1000.00 requests per second
+  latency summary (msec):
+          avg       min       p50       p95       p99       max
+        0.516     0.512     0.519     0.519     0.519     0.519
+
+root@f5807f543e3b:/data# redis-benchmark -n 1 -d 200 -t get
+====== GET ======
+  1 requests completed in 0.00 seconds
+  50 parallel clients
+  200 bytes payload
+  keep alive: 1
+  host configuration "save": 3600 1 300 100 60 10000
+  host configuration "appendonly": no
+  multi-thread: no
+
+Latency by percentile distribution:
+0.000% <= 0.671 milliseconds (cumulative count 1)
+100.000% <= 0.671 milliseconds (cumulative count 1)
+
+Cumulative distribution of latencies:
+0.000% <= 0.103 milliseconds (cumulative count 0)
+100.000% <= 0.703 milliseconds (cumulative count 1)
+
+Summary:
+  throughput summary: 1000.00 requests per second
+  latency summary (msec):
+          avg       min       p50       p95       p99       max
+        0.668     0.664     0.671     0.671     0.671     0.671
+
+root@f5807f543e3b:/data# redis-benchmark -n 1 -d 200 -t set
+====== SET ======
+  1 requests completed in 0.00 seconds
+  50 parallel clients
+  200 bytes payload
+  keep alive: 1
+  host configuration "save": 3600 1 300 100 60 10000
+  host configuration "appendonly": no
+  multi-thread: no
+
+Latency by percentile distribution:
+0.000% <= 0.663 milliseconds (cumulative count 1)
+100.000% <= 0.663 milliseconds (cumulative count 1)
+
+Cumulative distribution of latencies:
+0.000% <= 0.103 milliseconds (cumulative count 0)
+100.000% <= 0.703 milliseconds (cumulative count 1)
+
+Summary:
+  throughput summary: 1000.00 requests per second
+  latency summary (msec):
+          avg       min       p50       p95       p99       max
+        0.660     0.656     0.663     0.663     0.663     0.663
+
+root@f5807f543e3b:/data# redis-benchmark -n 1 -d 1024 -t get
+====== GET ======
+  1 requests completed in 0.00 seconds
+  50 parallel clients
+  1024 bytes payload
+  keep alive: 1
+  host configuration "save": 3600 1 300 100 60 10000
+  host configuration "appendonly": no
+  multi-thread: no
+
+Latency by percentile distribution:
+0.000% <= 0.727 milliseconds (cumulative count 1)
+100.000% <= 0.727 milliseconds (cumulative count 1)
+
+Cumulative distribution of latencies:
+0.000% <= 0.103 milliseconds (cumulative count 0)
+100.000% <= 0.807 milliseconds (cumulative count 1)
+
+Summary:
+  throughput summary: 1000.00 requests per second
+  latency summary (msec):
+          avg       min       p50       p95       p99       max
+        0.724     0.720     0.727     0.727     0.727     0.727
+
+root@f5807f543e3b:/data# redis-benchmark -n 1 -d 1024 -t set
+====== SET ======
+  1 requests completed in 0.00 seconds
+  50 parallel clients
+  1024 bytes payload
+  keep alive: 1
+  host configuration "save": 3600 1 300 100 60 10000
+  host configuration "appendonly": no
+  multi-thread: no
+
+Latency by percentile distribution:
+0.000% <= 0.767 milliseconds (cumulative count 1)
+100.000% <= 0.767 milliseconds (cumulative count 1)
+
+Cumulative distribution of latencies:
+0.000% <= 0.103 milliseconds (cumulative count 0)
+100.000% <= 0.807 milliseconds (cumulative count 1)
+
+Summary:
+  throughput summary: inf requests per second
+  latency summary (msec):
+          avg       min       p50       p95       p99       max
+        0.764     0.760     0.767     0.767     0.767     0.767
+
+root@f5807f543e3b:/data# redis-benchmark -n 1 -d 2048 -t get
+====== GET ======
+  1 requests completed in 0.00 seconds
+  50 parallel clients
+  2048 bytes payload
+  keep alive: 1
+  host configuration "save": 3600 1 300 100 60 10000
+  host configuration "appendonly": no
+  multi-thread: no
+
+Latency by percentile distribution:
+0.000% <= 0.711 milliseconds (cumulative count 1)
+100.000% <= 0.711 milliseconds (cumulative count 1)
+
+Cumulative distribution of latencies:
+0.000% <= 0.103 milliseconds (cumulative count 0)
+100.000% <= 0.807 milliseconds (cumulative count 1)
+
+Summary:
+  throughput summary: 1000.00 requests per second
+  latency summary (msec):
+          avg       min       p50       p95       p99       max
+        0.708     0.704     0.711     0.711     0.711     0.711
+
+root@f5807f543e3b:/data# redis-benchmark -n 1 -d 2048 -t set
+====== SET ======
+  1 requests completed in 0.00 seconds
+  50 parallel clients
+  2048 bytes payload
+  keep alive: 1
+  host configuration "save": 3600 1 300 100 60 10000
+  host configuration "appendonly": no
+  multi-thread: no
+
+Latency by percentile distribution:
+0.000% <= 0.663 milliseconds (cumulative count 1)
+100.000% <= 0.663 milliseconds (cumulative count 1)
+
+Cumulative distribution of latencies:
+0.000% <= 0.103 milliseconds (cumulative count 0)
+100.000% <= 0.703 milliseconds (cumulative count 1)
+
+Summary:
+  throughput summary: 1000.00 requests per second
+  latency summary (msec):
+          avg       min       p50       p95       p99       max
+        0.660     0.656     0.663     0.663     0.663     0.663
